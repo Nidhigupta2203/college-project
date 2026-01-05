@@ -7,16 +7,34 @@ assignments and grades for a particular college.It uses Node.js for backend and 
 The purpose of this application is to automate the existing manual system by the help of computerized equipment and full-fledged computer software, fulfilling their requirements, so that their valuable data/information can be stored for a longer period with easy accessing and manipulation of the same. The required software and hardware are easily available and easy to work with.
 
 
-**SEE THE COMPLETE REPORT HERE** [Report](docs/CMSNSIT_Report.pdf)
 
 
-## Product Features and User Classifications
+## Tech Stack
 
-There are several types of end users for the CMS. They are broadly divided as Students, Staff and the Administrator. Each of these classes have their own set of features
+- Node.js, Express.js (backend server). 
+- MySQL (relational database).
+- EJS (templating for server‑side rendered views).
+- HTML, CSS, JavaScript (frontend).
+- Session + JWT based authentication and authorization (environment variables configured in `.env`).
 
-- **ADMIN** who can view and edit the details of any students/staff. Can add/edit departments, courses, classes and time-tables.
-- **STAFF** who can view students details, add/update assignments, marks and attendance of a particular student.   They can see the time-table of a particular class also.
-- **STUDENT** who can update profile/ add solution to assignments and see marks/attendance.
+
+## User Roles and Features
+
+There are three main types of end users in the system: **Admin**, **Staff**, and **Student**, each with their own permissions.
+
+- **ADMIN**  
+  - View and edit details of any student or staff.  
+  - Add and edit departments, courses, classes and time‑tables.
+
+- **STAFF**  
+  - View student details for their classes.  
+  - Add and update assignments, marks and attendance for students.  
+  - View the time‑table of a particular class.
+
+- **STUDENT**  
+  - Update profile information.  
+  - Submit solutions for assignments.  
+  - View marks and attendance.
 
 
 ## System Design
@@ -54,9 +72,6 @@ We are using MySQL as our database. The main objective of this project is to use
 
 -------------------------------------------------------------------------------
 
-**SEE THE COMPLETE REPORT HERE** [Report](docs/CMSNSIT_Report.pdf)
-
-
 
 
 ## Setting up Project
@@ -77,4 +92,13 @@ We are using MySQL as our database. The main objective of this project is to use
 * Create tables using the sql script file in `databse/cms.sql`;
 * To seed data in the database run to file in `seed` folder
 * To start the application execute `npm start`
+
+## Project Status and Future Work
+
+This project is an academic/learning‑oriented implementation of a college management system.
+Possible future improvements:
+
+- Add role‑based dashboard analytics (e.g., attendance stats, marks distribution).
+- Improve UI/UX with a modern component library and responsive design.
+- Integrate email/SMS notifications for important events (results, attendance shortage, etc.).
 
